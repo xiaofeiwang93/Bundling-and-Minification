@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <!-- SEO -->
+    @Html.Partial("HtmlHeadSection/SEOHead", Model)
+
+    <!-- Favicons -->
+    @Html.Partial("HtmlHeadSection/Favicons", Model)
+
+    <!-- CSS -->
+    @Styles.RenderFormat(@"<link href=""{0}"" rel=""stylesheet"" media=""print"" type=""text/css"" />", "~/bundles/css/print")
+    @Styles.RenderFormat(@"<link href=""{0}"" rel=""stylesheet"" media=""screen"" type=""text/css"" />", "~/bundles/css/screen")
+
+    <!-- JS -->
+    <script type="text/javascript" src="~/scripts/jquery-1.12.4.min.js"></script>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type='text/css'>
+
+    <!--Google Recaptcha-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+    
+</html>
