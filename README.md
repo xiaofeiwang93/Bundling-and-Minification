@@ -1,4 +1,5 @@
 # Bundling-and-Minification
+
 First thing to do before doing any programming: Install-Package Microsoft.AspNet.Web.Optimization
 
 Go to App_Start, create a new class and name it Bundle.Config. Then edit the file as shown in the BundleConfig.cs.
